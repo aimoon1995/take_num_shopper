@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-stepper": "@vant/weapp/stepper/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-button": "@vant/weapp/button/index",
+    "van-toast": "@vant/weapp/toast/index",
+    "van-notice-bar": "@vant/weapp/notice-bar/index"
+  },
+  "enablePullDownRefresh": true
+}

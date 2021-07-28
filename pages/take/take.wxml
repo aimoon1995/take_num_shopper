@@ -1,0 +1,53 @@
+<view class="out">
+<view class="top" >
+ <view style="flex:5;padding-left:50px;margin-bottom:10px">烫发等待人数:<text style="color:red">{{permCount}}</text></view>
+ <view style="flex:5; adding-left:30px">理发等待人数:<text style="color:red">{{hairCutCount}}</text></view>
+</view>
+
+<view>
+  <van-notice-bar
+  left-icon="volume-o"
+  speed="{{50}}"
+  text="{{custNumShow}}"
+/>
+</view>
+<view class="middle">
+  <view class = "permCountSec"><text style="padding-right:45px">烫发人数</text><van-stepper input-width="80px" input-align="center"  button-size="62px" value="{{permCountSec}}" bind:change="permCountChange"  min="0" max="5" disable-input	/>
+  </view>
+  <view class = "haircutCountSec"><text style="padding-right:45px">理发人数</text><van-stepper input-width="80px" input-align="center"  button-size="62px" value="{{ hairCutCountSec }}" bind:change="hairCutCountChange"  min="0" max="5" disable-input	/>
+  </view>
+  <van-cell-group style="padding-top:50px">
+  <van-field 
+    value="{{name}}"
+    required
+    clearable
+    autosize
+    label="称呼"
+    title-width = "3em"
+    placeholder="请输入称呼"
+    bind:blur	="clickIcon"
+    bind:clear	= "nameClear"
+    error
+    custom-style="width:300px"
+  />
+</van-cell-group>
+<van-cell-group style="padding-top:50px">
+<van-field 
+    value="{{mobile}}"
+    required
+    clearable
+    autosize
+    label="手机号"
+    title-width = "3em"
+    placeholder="请输入手机号"
+    bind:blur	="mobClickIcon"
+    bind:clear	= "mobClear"
+    custom-style="width:300px"
+    error
+    type="number"
+  />
+</van-cell-group>
+<van-button  round type="primary"  color="#7232dd" style="padding-top:50px" custom-style="width:180px" bindtap="takeNum">取号</van-button>
+  </view>
+  
+</view>

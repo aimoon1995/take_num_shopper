@@ -1,0 +1,42 @@
+/* pages/take/take.wxss */
+
+.out{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 30% 0;
+  box-sizing: border-box;
+  background-color: rgba(221, 231, 235, 0.986);
+  font-size: large;
+}
+
+.top {
+  display:flex;
+  border-bottom: solid 3rpx;
+}
+
+.middle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-top: 100px;
+}
+
+.middle .permCountSec{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+}
+
+.middle .haircutCountSec{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}

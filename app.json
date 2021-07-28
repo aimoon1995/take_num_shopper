@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/take/take"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarTitleText": "漫简造型",
+    "navigationBarTextStyle":"white",
+    "backgroundColor":"#bbb"
+  },
+  "sitemapLocation": "sitemap.json"
+}
